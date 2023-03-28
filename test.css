@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+:root {
+    --main-bg-color : rgb(255, 255, 0);
+}
+body {
+    font-family: 'Merriweather', serif;
+    background: url(./form\ image1.jpg);
+    height: 100vh;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(7px);
+}
+header a {
+    color: var(--main-bg-color);
+    text-decoration: none;
+}
+header h2 {
+    color: var(--main-bg-color);
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-header {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-header h1 {
+    margin-bottom : 0;
+}
+
+.main-form {
+    border: 1px solid rgba(255, 255, 255, .3);
+    backdrop-filter: blur(20px);
+    width: 300px;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+input {
+    width: 94%;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .5);
+    transition: 1s;
+    padding-left: 1rem;
+}
+input:focus {
+    background: white;
+}
+::placeholder {
+    color: unset;
+}
+
+/* to make the box color black */
+.form-footer .checkbox input[type="checkbox"]{
+    height: 16px;
+    width: 16px;
+    accent-color: black;
+}
+.form-footer .checkbox label {
+    color: white;
+    font-size: 14px;
+}
+
+#tick {
+    height: 15px;
+}
+
+.form-footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    transition: .5s;
+}
+.form-footer a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+button {
+    padding: .7rem 8rem;
+    border-radius: 100px;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
